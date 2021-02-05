@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300&display=swap');
+* {padding: 0;margin: 0;}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Londrina Solid', cursive;
+}
+hr {
+    height: 3px;
+    background: rgb(184, 104, 104);
+    border: 0;
+    margin: 0 auto;
+    width: 40%;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+header {
+    width: 100%;
+    position: fixed;
+    background: black;
+    z-index: 2;
+}
+
+.container {
+    width: 994px;
+    margin: 0 auto; 
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    float: right;
+}
+
+#links ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.banner-jurema {
+    height: 100vh !important;
+    background: url(../img/banner.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+#sobre {
+    background: url(../img/bg-conteudo.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#sobre .flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+
+#sobre h1 {
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+    padding: 20px 0;
+}
+
+#sobre .sobre {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+#texto-sobre {
+    width: 700px;
+    height: 100vh;
+    text-indent: 40px;
+    font-size: 30px;
+    text-shadow: 2px 1px black;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.image-jurema {
+    margin: 20px 30px 0;
+}
+
+#produtos .container{
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-produtos.png);
+    background-size: cover;
+}
+#produtos .itens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 994px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    text-shadow: 1px 1px black;
+    padding: 20px;
+    margin-top: 30px;
+}
+.itens > div {
+    flex: 1 1 300px;
+}
+#produtos h1 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+    padding-top: 30px;
+}
+
+#contato {
+    
+    background: url(../img/bg-contato.png);
+    background-size: cover;
+}
+
+#contato h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    font-size: 80px;
+    padding-top: 30px;
+}
+
+#contato .container{
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    padding-bottom: 50px;
+}
+
+@media  screen and (min-width: 150px) and (max-width: 560px) {
+    .container {
+        width: 100%;
+    }
+    .banner-jurema {
+        background: url(../img/banner-mobile.png);
+        background-size: cover;
+        background-position: top center;
+    }
+    header {
+        position: absolute;
+        justify-content: center;
+    }
+    header .logo img {
+        width: 32px;
+        height: 32px;
+        padding: 10px;
+    }
+    #links ul li {
+        display: inline-block;
+        padding: 20px;
+        font-size: 15px;
+    }
+    #texto-sobre {
+        margin: 20px 10px 0;
+        font-size: 25px;
+    }
+    #contato .container {
+        width: 85%;
+    }
+    #logo {
+        margin-left: 10px;
+    }
+    .image-jurema {
+        display: none;
+    }
+}
+@media  screen and (min-width: 561px) and (max-width: 750px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        position: absolute;
+        justify-content: center;
+    }
+    #logo {
+        margin-left: 30px;
+    }
+    #texto-sobre {
+        margin: 0 10px;
+        font-size: 32px;
+    }
+    #contato .container {
+        width: 85%;
+    }
+    .image-jurema {
+        display: none;
+    }
+}
+
+@media  screen and (min-width: 751px) and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        position: absolute;
+        justify-content: center;
+    }
+    #logo {
+        margin-left: 30px;
+    }
+    .image-jurema {
+        display: none;
+    }
+    #texto-sobre {
+        margin: 0 10px;
+        font-size: 40px;
+    }
+}
+
+
